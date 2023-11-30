@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js" type="text/javascript"></script>
+    <style>
+        body {
+            width:80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            text-align: center;
+        }
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap:10px;
+            margin-top:30px;
+        }
+        .container .squares {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 20%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+        .container .squares:hover {
+            background-color: rgba(52, 173, 52, 0.3);
+        }
+    </style>
+    <title>Javascript challenge</title>
+
+</head>
+<body>
+    <h1>Javascript challenge 1:</h1>
+    <p>Build six squares with no color
+
+        Every time you click one, it turns green
+        
+        When the last square turns green, they all go back to no color in backwards sequence to which it was clicked (not all at once)</p>
+    
+       <h3>Solution:</h3>
+       <hr/>
+    <div class="container">
+        <div class="squares" id="1">
+
+        </div>
+        <div class="squares" id="2">
+            
+        </div>
+        <div class="squares" id="3">
+            
+        </div>
+        <div class="squares" id="4">
+            
+        </div>
+        <div class="squares" id="5">
+            
+        </div>
+        <div class="squares" id="6">
+            
+        </div>
+    </div>
+
+</body>
+</html>
